@@ -13,10 +13,12 @@
     }
 
     a {
-        font-weight: bold;
-        color: @river-bend;
-        text-decoration: none;
+        .navStyle(@river-bend);
         padding: 0 15px;
+
+        &:hover {
+            color: lighten(@river-bend, 20%);
+        }
     }
 
 }
