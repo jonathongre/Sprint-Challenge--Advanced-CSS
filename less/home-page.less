@@ -4,6 +4,14 @@
 
     .intro {
 
+        img {
+            .imgSize(100%, auto, 10px);
+
+            @media @phone {
+                padding: 0 2px;
+            }
+        }
+
         h2 {
             padding: 15px;
         }
@@ -22,11 +30,32 @@
         img {
             .imgSize (28%, 100%, 20px);
             margin: 20px 2.5%;
+
+            @media @phone {
+                .imgSize (100%, 100%, 20px);
+            }
         }
+
+        .sky {
+            @media @phone {
+                display: none;
+            }
+        }
+
+        .launch {
+            @media @phone {
+                display: none;
+            }
+        }
+
     }
 
     .visit-planets {
         padding: 15px;
+
+        @media @phone {
+            padding: auto 2px;
+        }
 
         h3 {
             margin-top: 11px;
@@ -44,8 +73,24 @@
         display: flex;
         justify-content: center;
 
+        @media @phone {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 20px 2px;
+            margin-top: 20px;
+
+        }
+
         .walk-text {
             width: 50%;
+
+            @media @phone {
+                width: 95%;
+                margin-top: 20px;
+                padding-bottom: 20px;
+            }
+
+
 
             h3 {
                 margin-bottom: 10px;
@@ -57,11 +102,20 @@
 
             .btn {
                 .btnStyle (35px, 100px, 1.8rem, @wild-sand, @river-bend, 5px);
-            }
 
-            a {
-                .navStyle(@wild-sand);
+                @media @phone {
+                    .btnStyle (70px, 99%, 2rem, @wild-sand, @river-bend, 5px);
 
+                }
+
+
+                a {
+                    .navStyle(@wild-sand);
+
+
+
+
+                }
             }
         }
 
@@ -69,11 +123,15 @@
             width: 46%;
             margin-left: 4%;
 
+            @media @phone {
+                width: 95%;
+                margin: auto;
+            }
+
             img {
                 .imgSize(100%, auto, 10px);
+
             }
         }
     }
 }
-
-// home
