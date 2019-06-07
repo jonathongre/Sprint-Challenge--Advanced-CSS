@@ -1,1 +1,30 @@
 // Navigation code here
+.navigation {
+    top: 0;
+    max-width: 800px;
+    width: 100%;
+    margin: 12px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: @nav-bg;
+    position: sticky;
+    opacity: .7;
+    z-index: 2;
+
+    nav {
+        padding-top: 20px;
+    }
+
+    a {
+        .navStyle(@river-bend);
+        padding: 0 15px;
+
+        &:hover {
+            color: lighten(@river-bend, 20%);
+        }
+    }
+
+}
